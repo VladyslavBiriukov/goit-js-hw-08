@@ -7,9 +7,32 @@
     <title>SimpleLightbox library</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/01-gallery.css" />
+          <style>
+            .button {
+              background-color: #007aff;
+              border: none;
+              color: white;
+              padding: 12px 24px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 8px;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+              font-size: 16px;
+              transition: all 0.2s ease-in-out;
+            }
+          
+            .button:hover {
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+              font-size: 18px;
+            }
+          </style>
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <p><a class="button" href="index.html">Go back</a></p>
 
     <!-- Add gallery items to this list -->
     <div class="gallery"></div>

@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 8</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+          ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  li {
+    margin: 1rem;
+  }
+
+  a {
+    padding: 12px 24px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #007aff;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: #fff;
+    background-color: #007aff;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+
+  @media screen and (min-width: 768px) {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 2rem;
+    }
+  }
+    </style>
   </head>
   <body>
     <ul>
