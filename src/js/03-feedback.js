@@ -25,10 +25,17 @@ function populateTextarea() {
 }
 form.addEventListener('submit', event => {
   event.preventDefault();
+
   const feedback = {
     email: emailInput.value,
     message: messageInput.value,
   };
+
+    if (!feedback.email|| !feedback.message) {
+    alert('Please fill in all fields');
+    return;
+    }
+  
   localStorage.removeItem('feedback-form-state');
   event.target.reset();
   console.log(feedback);
